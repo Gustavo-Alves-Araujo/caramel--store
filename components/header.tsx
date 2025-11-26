@@ -124,7 +124,7 @@ export default function Header() {
                   ? "bg-gold hover:bg-gold/90 text-coffee-dark"
                   : "bg-gold hover:bg-gold/90 text-coffee-dark shadow-lg shadow-black/30"
               }`}
-              onClick={() => window.open("https://wa.me/5521959017485?text=Olá! Gostaria de solicitar um orçamento", "_blank")}
+              onClick={() => window.open("https://wa.me/5521965913009?text=Olá! Gostaria de solicitar um orçamento", "_blank")}
             >
               <Phone className="mr-2 h-4 w-4" />
               Orçamento
@@ -188,7 +188,7 @@ export default function Header() {
                   className="mt-2 bg-gold hover:bg-gold/90 text-coffee-dark font-medium"
                   onClick={() => {
                     closeMobileMenu()
-                    window.open("https://wa.me/5521959017485?text=Olá! Gostaria de solicitar um orçamento", "_blank")
+                    window.open("https://wa.me/5521965913009?text=Olá! Gostaria de solicitar um orçamento", "_blank")
                   }}
                 >
                   <Phone className="mr-2 h-4 w-4" />

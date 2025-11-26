@@ -12,8 +12,9 @@ import type { Product } from "@/lib/types"
 
 const featuredProducts = [
   products.find((product) => product.id === 1), // Carrinho de Pipoca
-  products.find((product) => product.id === 2), // Carrinho de Picolé
+  products.find((product) => product.id === 2), // Carrinho de Sorvete
   products.find((product) => product.id === 3), // Algodão Doce
+  products.find((product) => product.id === 4), // Carrinho de Crepe
 ].filter(Boolean) as Product[]
 
 export default function FeaturedProducts() {
@@ -45,7 +46,7 @@ export default function FeaturedProducts() {
       opacity: 1,
       y: 0,
       transition: {
-        type: "spring",
+        type: "spring" as const,
         stiffness: 100,
         damping: 12,
       },
@@ -107,7 +108,7 @@ export default function FeaturedProducts() {
         </motion.div>
 
         <motion.div
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12 justify-items-center max-w-6xl mx-auto"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12 justify-items-center max-w-7xl mx-auto"
           variants={containerVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
@@ -124,12 +125,12 @@ export default function FeaturedProducts() {
             >
               <Card className="product-card overflow-hidden border-none bg-white shadow-lg h-full flex flex-col group rounded-xl">
                 <div className="relative">
-                  <Link href={`/product-page/${product.slug}`} className="relative h-72 w-full overflow-hidden block">
+                  <Link href={`/product-page/${product.slug}`} className="relative h-72 w-full overflow-hidden block bg-cream/30">
                     <Image
                       src={product.image || "/placeholder.svg"}
                       alt={product.name}
                       fill
-                      className="object-cover transition-transform duration-700 group-hover:scale-110"
+                      className="object-contain p-4 transition-transform duration-700 group-hover:scale-105"
                     />
                     <motion.div
                       className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
@@ -165,7 +166,7 @@ export default function FeaturedProducts() {
                       onClick={(e) => {
                         e.preventDefault()
                         window.open(
-                          `https://wa.me/5521959017485?text=Olá! Gostaria de reservar o carrinho: ${product.name}`,
+                          `https://wa.me/5521965913009?text=Olá! Gostaria de reservar o carrinho: ${product.name}`,
                           "_blank",
                         )
                       }}
@@ -210,7 +211,7 @@ export default function FeaturedProducts() {
                   onClick={(e) => {
                     e.preventDefault()
                     window.open(
-                      `https://wa.me/5521959017485?text=Olá! Gostaria de reservar um carrinho para meu evento`,
+                      `https://wa.me/5521965913009?text=Olá! Gostaria de reservar um carrinho para meu evento`,
                       "_blank",
                     )
                   }}

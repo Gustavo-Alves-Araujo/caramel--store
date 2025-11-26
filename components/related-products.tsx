@@ -38,12 +38,12 @@ export default function RelatedProducts({ currentProductId, category }: RelatedP
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
               <Card className="product-card overflow-hidden border-none bg-white shadow-md h-full flex flex-col group">
-                <Link href={`/product-page/${product.slug}`} className="relative h-48 w-full overflow-hidden">
+                <Link href={`/product-page/${product.slug}`} className="relative h-48 w-full overflow-hidden bg-cream/30">
                   <Image
                     src={product.image || "/placeholder.svg"}
                     alt={product.name}
                     fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-110"
+                    className="object-contain p-2 transition-transform duration-500 group-hover:scale-105"
                   />
                 </Link>
                 <CardContent className="pt-4 flex-grow">

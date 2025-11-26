@@ -45,8 +45,8 @@ export default function PromotionCoupon() {
               <div className="absolute -top-12 -left-12 w-24 h-24 bg-coffee-dark/20 rounded-full blur-xl"></div>
               <div className="absolute -bottom-12 -right-12 w-24 h-24 bg-coffee-dark/20 rounded-full blur-xl"></div>
 
-              <div className="mr-20 top-0 right-0 md:right-8 h-full flex items-center">
-                 <Scissors className="w-20 h-20 text-coffe-dark" />
+              <div className="mr-20 top-0 right-0 md:right-8 h-full flex justify-center items-center">
+                 <Scissors className="w-20 h-20 text-coffe-dark ml-20" />
               </div>
 
               <div className="flex-1 text-center md:text-left mb-4 md:mb-0">

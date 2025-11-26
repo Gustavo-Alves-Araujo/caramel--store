@@ -87,14 +87,17 @@ export default function Hero() {
   };
 
   const logoVariants = {
-    hidden: { opacity: 0, scale: 0.8 },
+    hidden: { opacity: 0, scale: 0.5, y: -30, rotate: -180 },
     visible: {
       opacity: 1,
       scale: 1,
+      y: 0,
+      rotate: 0,
       transition: {
-        duration: 0.8,
-        type: "spring",
+        duration: 1,
+        type: "spring" as const,
         stiffness: 100,
+        damping: 10,
       },
     },
   };
@@ -130,6 +133,25 @@ export default function Hero() {
 
       <motion.div className="container relative z-20 px-4" style={{ opacity }}>
         <div className="max-w-4xl mx-auto text-center">
+          {/* Logo animado acima do título */}
+          <motion.div
+            className="flex justify-center mb-8"
+            initial="hidden"
+            animate="visible"
+            variants={logoVariants}
+          >
+            <motion.div
+              whileHover={{ 
+                scale: 1.1, 
+                rotate: [0, -10, 10, -10, 0],
+                transition: { duration: 0.5 }
+              }}
+              className="drop-shadow-[0_4px_20px_rgba(0,0,0,0.5)]"
+            >
+              <Logo variant="gold" size="lg" />
+            </motion.div>
+          </motion.div>
+
           <motion.h1
             className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight"
             initial="hidden"

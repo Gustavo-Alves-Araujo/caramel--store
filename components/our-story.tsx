@@ -104,7 +104,7 @@ export default function OurStory() {
             >
               <Button
                 className="bg-gold hover:bg-gold/90 text-coffee-dark font-medium text-lg px-8 py-6 h-auto shadow-xl shadow-gold/20"
-                onClick={() => window.open("https://wa.me/5521959017485?text=Olá! Gostaria de saber mais sobre a Caramelô", "_blank")}
+                onClick={() => window.open("https://wa.me/5521965913009?text=Olá! Gostaria de saber mais sobre a Caramelô", "_blank")}
               >
                 Entre em contato
                 <ArrowRight className="ml-2 h-5 w-5" />

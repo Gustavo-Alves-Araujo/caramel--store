@@ -116,8 +116,8 @@ export default function ProductPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {/* Imagem do produto */}
             <div>
-              <div className="relative h-[400px] bg-white rounded-lg overflow-hidden border border-muted">
-                <Image src={selectedImage || product.image} alt={product.name} fill className="object-contain" />
+              <div className="relative h-[400px] bg-cream/30 rounded-lg overflow-hidden border border-muted">
+                <Image src={selectedImage || product.image} alt={product.name} fill className="object-contain p-4" />
               </div>
 
               {/* Galeria de miniaturas */}
@@ -151,7 +151,7 @@ export default function ProductPage() {
                 className="w-full font-bold py-3 bg-yellow-400 hover:bg-yellow-500 text-coffee-dark"
                 onClick={() =>
                   window.open(
-                    `https://wa.me/5521959017485?text=Olá! Gostaria de solicitar informações sobre o produto: ${product.name}`,
+                    `https://wa.me/5521965913009?text=Olá! Gostaria de solicitar informações sobre o produto: ${product.name}`,
                     "_blank",
                   )
                 }

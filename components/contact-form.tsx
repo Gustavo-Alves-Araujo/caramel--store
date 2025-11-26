@@ -96,8 +96,8 @@ export default function ContactForm() {
                       <div>
                         <h3 className="font-bold text-coffee-dark mb-1">Telefone</h3>
                         <p className="text-muted-foreground">
-                          <a href="tel:+5521959017485" className="hover:text-gold transition-colors">
-                            (21) 95901-7485
+                          <a href="tel:+5521965913009" className="hover:text-gold transition-colors">
+                            (21) 96591-3009
                           </a>
                         </p>
                       </div>
@@ -155,7 +155,7 @@ export default function ContactForm() {
                         <Instagram className="h-5 w-5 text-gold" />
                       </motion.a>
                       <motion.a
-                        href="https://wa.me/5521959017485"
+                        href="https://wa.me/5521965913009"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="bg-coffee-dark w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:bg-coffee-medium transition-colors duration-300"
