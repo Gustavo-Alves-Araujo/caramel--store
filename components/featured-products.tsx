@@ -69,7 +69,7 @@ export default function FeaturedProducts() {
             className="relative inline-block"
           >
             <h2 className="text-5xl md:text-6xl font-bold mb-4 text-coffee-dark relative z-10">
-              NOSSOS <span className="text-gold-dark">CARRINHOS</span>
+              Nossos <span className="text-gold-dark"> Carrinhos</span>
             </h2>
             <div className="absolute -bottom-2 left-0 w-full h-1 bg-gold-gradient rounded-full"></div>
             <div className="absolute -z-10 -bottom-6 -left-6 w-20 h-20 bg-gold-light/20 rounded-full blur-xl"></div>
