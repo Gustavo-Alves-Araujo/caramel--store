@@ -133,9 +133,9 @@ export default function Hero() {
 
       <motion.div className="container relative z-20 px-4" style={{ opacity }}>
         <div className="max-w-4xl mx-auto text-center">
-          {/* Logo animado acima do título */}
+          {/* Logo animado acima do título - oculto no mobile */}
           <motion.div
-            className="flex justify-center mb-8"
+            className="hidden md:flex justify-center mb-8"
             initial="hidden"
             animate="visible"
             variants={logoVariants}
